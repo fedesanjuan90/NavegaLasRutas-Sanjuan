@@ -1,18 +1,18 @@
-import React from 'react'
-import CartWidget from './CartWidget'
+import { Link } from 'react-router-dom';
+import CartWidget from './CartWidget';
 
 const NavBar = () => {
   return (
-    <nav style={{ display: 'flex', justifyContent: 'space-between', padding: '1rem', background: '#eee' }}>
-      <h1>Mi Tienda</h1>
-      <ul style={{ display: 'flex', gap: '1rem', listStyle: 'none' }}>
-        <li><a href="#">Inicio</a></li>
-        <li><a href="#">Productos</a></li>
-        <li><a href="#">Contacto</a></li>
+    <nav>
+      <Link to="/"><h1>MiTienda</h1></Link>
+      <ul>
+        <li><Link to="/categoria/ropa">Ropa</Link></li>
+        <li><Link to="/categoria/tecnologia">Tecnología</Link></li>
       </ul>
       <CartWidget />
     </nav>
-  )
-}
+  );
+};
 
-export default NavBar
+export default NavBar;
+
