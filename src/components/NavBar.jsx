@@ -6,8 +6,8 @@ const NavBar = () => {
     <nav>
       <Link to="/"><h1>MiTienda</h1></Link>
       <ul>
-        <li><Link to="/categoria/ropa">Ropa</Link></li>
-        <li><Link to="/categoria/tecnologia">Tecnología</Link></li>
+        <li><Link to="/categoria/bebidas">bebidas</Link></li>
+        <li><Link to="/categoria/tecnologia">merchandasing</Link></li>
       </ul>
       <CartWidget />
     </nav>
